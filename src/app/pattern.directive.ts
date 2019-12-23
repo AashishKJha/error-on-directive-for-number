@@ -17,4 +17,9 @@ export class PatternDirective {
       e.preventDefault()
     }
   }
+
+  @HostListener('paste', ['$event']) onPaste(event) {
+      event.preventDefault();
+  }
+
 }
